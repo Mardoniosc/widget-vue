@@ -2,6 +2,7 @@
 <template>
   <div class="flex justify-between w-full my-5">
     <button
+      id="issue-button"
       @click="handleSelect('ISSUE')"
       class="rounded-xl hover:bg-gray-100 bg-brand-gray flex flex-col
         justify-center items-center p-5 w-28 cursor-pointer focus:outline-none">
@@ -12,6 +13,7 @@
     </button>
 
     <button
+      id="idea-button"
       @click="handleSelect('IDEA')"
       class="rounded-xl hover:bg-gray-100 bg-brand-gray flex flex-col
         justify-center items-center p-5 w-28 cursor-pointer focus:outline-none">
@@ -22,6 +24,7 @@
     </button>
 
     <button
+      id="other-button"
       @click="handleSelect('OTHER')"
       class="rounded-xl hover:bg-gray-100 bg-brand-gray flex flex-col
         justify-center items-center p-5 w-28 cursor-pointer focus:outline-none">

@@ -2,6 +2,7 @@
 <template>
   <div class="flex flex-col items-center justify-between w-full my-5">
     <icon
+      id="icon-success"
       name="check"
       :color="palette.success"
       size="70"/>
@@ -11,6 +12,7 @@
 
     <div class="flex justify-center items-center w-full mt-2">
       <button
+        id="button-enviar-mais-feedback"
         @click="goBack"
         class="rounded-full fon-regular text-sm flex flex-col justify-center
           bg-brand-gray items-center py-2 px-5 cursor-pointer focus:outline-none"
