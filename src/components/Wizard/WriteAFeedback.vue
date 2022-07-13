@@ -2,11 +2,13 @@
 <template>
   <div class="flex flex-col items-center justify-center w-full my-5">
     <textarea
+      id="text-area-feedback"
       v-model="state.feedback"
       class="w-full rounded-lg border-2 border-gray-300 border-solid h-24 p-2 resize-none focus:outline-none"
     ></textarea>
 
     <button
+      id="button-submit-feedback"
       :disabled="submitButtonIsDisabled"
       :class="{
         'opacity-50': state.isLoading,
@@ -86,7 +88,8 @@ export default defineComponent({
           setErrorState()
         }
       } catch (error) {
-        handleError(error)
+        const erro: Error = (error as Error)
+        handleError(erro)
       }
     }
 

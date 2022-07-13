@@ -2,6 +2,7 @@
 <template>
   <div
     @click="() => emit('open-box')"
+    id="widget-open-button"
     class="
       fixed z-50 bottom-0 right-0 mb-5 mr-5 bg-brand-main rounded-full
       py-3 px-5 flex intems-center shadow-xl cursor-pointer select-none
